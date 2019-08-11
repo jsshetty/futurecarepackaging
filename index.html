@@ -3,45 +3,52 @@
 
 <head>
     <title>Future Care Packaging</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" type="image/png" href="https://i.udemycdn.com/organization_favicon/32x32/30898_97b7.png"
         sizes="32x32">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
-<body>
-    <header></header>
-    <nav class="navbar navbar-light" style="background-color: #e3f2fd; margin-bottom: 0px;" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">BrandICON</a>
-            <a class="toggle-topbar menu-icon" href="#"></a>
-        </div>
-        <div>
-            <ul class="nav navbar-nav">
-                <li class="nav-item active"><a href="#home">Home</a></li>
-                <li class="nav-item"><a href="#client">Client</a></li>
-                <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#contact">Contact Us</a></li>
-            </ul>
-            <button class="btn btn-outline-success connectUs btn-lg active" type="submit"><a href="#phone">Get a quote</a></button>
+<body style="background-color: #ebfffb;">
+    <nav class="navbar navbar-default navbar-light" style="background-color: #b1e8ed; margin-bottom: 0px;"
+        role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav header">
+                    <li class="nav-item"><a href="#home">Products</a></li>
+                    <li class="nav-item"><a href="#client">Clients</a></li>
+                    <li class="nav-item"><a href="#about">Leadership</a></li>
+                    <li class="nav-item"><a href="#contact">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item connectUs">
+                        <a href="#phone">
+                            <button class="btn btn-outline-success btn-lg" type="submit">Get a
+                                quote</button>
+                                <span class="tool-tip">Click Here</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="home-container" id="home">
-        <img class="background-image" src="img/img-5.jpg">
+        <!-- <img class="background-image" src="img/img-5.jpg"> -->
         <div class="company-details">
             <h1 class="company-name">Future Care Packaging</h1>
             <p class="line-1">Your safety is our concern</p>
@@ -50,23 +57,31 @@
 
     <div class="client-container" id="client">
         <div>
-            <h1 class="client-header">Our beloved Clients</h1>
+            <h1 class="client-header">Our Beloved Clients</h1>
             <div class="container">
-                <div class="col-lg-6 col-sm-8 client-box">
-                    <img class="client-image" src="img/img-1.jpeg">
-                    <h2 class="client-name">ABB</h2>
+                <div class="col-lg-6  client-box">
+                    <div class="col-lg-12">
+                        <img class="client-image" src="img/abb.png">
+                        <h2 class="client-name">ABB</h2>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-8 client-box">
-                    <img class="client-image" src="img/img-1.jpeg">
-                    <h2 class="client-name">Micro Land</h2>
+                <div class="col-lg-6  client-box">
+                    <div class="col-lg-12">
+                        <img class="client-image" src="img/microtek.jpeg">
+                        <h2 class="client-name">Microtek</h2>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-8 client-box">
-                    <img class="client-image" src="img/img-1.jpeg">
-                    <h2 class="client-name">ABB</h2>
+                <div class="col-lg-6  client-box">
+                    <div class="col-lg-12">
+                        <img class="client-image" src="img/ogera.jpeg">
+                        <h2 class="client-name">Ogara</h2>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-8 client-box">
-                    <img class="client-image" src="img/img-1.jpeg">
-                    <h2 class="client-name">ABB</h2>
+                <div class="col-lg-6  client-box">
+                    <div class="col-lg-12">
+                        <img class="client-image" src="img/himalaya.jpeg">
+                        <h2 class="client-name">Himalaya</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,15 +89,21 @@
 
     <div class="about-container" id="about">
         <div>
-            <h1 class="about-header">About Us</h1>
+            <h1 class="about-header">Leadership</h1>
             <div class="container">
-                <div class="col-lg-6 col-sm-8 about-box">
-                    <img class="client-image" src="img/deepak.png">
-                    <h2 class="client-name">Deepak Shetty</h2>
+                <div class="col-lg-6  about-box">
+                    <div class="col-lg-12">
+
+                        <img class="about-image" src="img/deepak.png">
+                        <h2 class="about-name">Deepak Shetty</h2>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-sm-8 about-box">
-                    <img class="client-image" src="img/kiran.png">
-                    <h2 class="client-name">Kiran Gowda</h2>
+                <div class="col-lg-6  about-box">
+                    <div class="col-lg-12">
+
+                        <img class="about-image" src="img/kiran.png">
+                        <h2 class="about-name">Kiran Gowda</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,18 +114,77 @@
     <div class="map">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15549.729256079609!2d77.4697056!3d13.0081191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3b1083bc3093%3A0xb2c11a903875bda!2sFuture+Care+Packaging!5e0!3m2!1sen!2sin!4v1565459930864!5m2!1sen!2sin"
-            width="80%" height="300vw" frameborder="0" style="border:0; margin-left: 100px" allowfullscreen></iframe>
+            width="70%" height="300vw" frameborder="0" style="border:0;" allowfullscreen></iframe>
     </div>
     <div class="connect-us" id="phone">
         <div>
-            </br> Connect Us </br>
-        <hr style="color:black">
-            <p>jss@gmailcom</p>
+            Our Contact Details </br>
+            <hr style="color:black">
+
+            <i class="fa fa-envelope"></i>
+            <p><a target="_top" href="mailto:dsshetty@gmail.com">dsshetty@gmail.com</a></p>
             Phone: </br>
             <p>9878778888</p>
             <p>9878778888</p>
         </div>
     </div>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Company<span>logo</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">Product</a>
+                ·
+                <a href="#client">Clients</a>
+                ·
+                <a href="#about">About</a>
+                ·
+                <a href="#contact">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Future Care Packaging &copy; 2019</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Kachohalli</span> Bengaluru, Karnataka</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 999999999</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <a target="_top" href="mailto:dsshetty@gmail.com?subject = Feedback&body = Message">
+                    Send Feedback
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+            <p class="footer-company-about">
+                <span>Powered by <a target="_top" href="mailto:jsshetty170@gmail.com">Sharath Shetty</a></span>
+            </p>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

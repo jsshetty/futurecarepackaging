@@ -1,14 +1,10 @@
+nav {
+    box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+}
 
 .connectUs {
     display: block;
     float: right;
-    background-color: #e3f2fd;
-}
-
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 .careers {
@@ -16,18 +12,28 @@ nav {
     background-color: #e3f2fd;
 }
 
-.connectUs:hover {
+.connectUs button:hover {
     background-color: #188d96;
     text-decoration: none;
+}
+
+.connectUs button {
+    background-color: inherit;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0 1px 8px rgba(155, 6, 6, 0.5);
 }
 
 .home-container {
     width: 100%;
     height: 40vw;
+    text-align: center;
 }
 
 .background-image {
     opacity: 0.1;
+    width: auto;
 }
 
 .company-name , .client-header, .about-header{
@@ -39,44 +45,56 @@ nav {
 }
 
 .line-1{
-    text-align: left;
+    text-align: center;
     font-family: monospace;
     font-size: 3vw;
     color: chocolate;
 }
 
 .company-details {
-    position: absolute;
-    top: 2vw;
+    display: inline;
+    text-align: center;
 }
 
-.client-image {
+.client-image, .about-image {
     width: 15vw;
+    height: 15vw;
     border-bottom-style: ridge;
     border-radius: 50%;
     border-style: solid;
     border-color: coral;
 }
 
-.client-name {
+.client-name, .about-name {
     text-align: center;
     display: inline;
-    padding: 15px;
+    padding: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
 }
 
-.client-box {
-    margin: 0px;
-    width: 20px;
-    height: 200px;
+.client-box div, .about-box div {
+    margin-bottom: 2vw;
+    text-align: center;
+    border-color: rgb(247, 242, 242);
+    border-right-width: 1px;
+    background-color: #faf5ef;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
+
 .map {
     width: 100%;
+    text-align: center;
+}
+
+.map iframe{
+    box-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 
 .connect-us {
     text-align: center;
     width: 100%;
-    height: 100px;
+    margin-top: 2vw;
 }
 
 .connect-us div{
@@ -87,4 +105,201 @@ nav {
     padding: 1vw;
     font-style: normal;
     font-size: 2vw;
+    display: block;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.5);
+}
+
+.header a{
+    font: bold;
+    font-size: 1.5vw;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.tool-tip {
+    display: none;
+    width: 10vw;
+    background-color:#FFFFE0;
+    color:#666666;
+    text-align: center;
+    border-radius:8px;
+    padding: 5px 0;
+    border-bottom:1px dotted #666;
+    font-weight:normal;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    top:80%;
+    right:30%;
+      
+        /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }
