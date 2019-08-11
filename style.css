@@ -95,17 +95,17 @@ nav {
 .connect-us {
     text-align: center;
     width: 100%;
-    margin-top: 2vw;
+    margin-top: 5vw;
 }
 
 .connect-us div{
-    width: 30vw;
+    width: 50vw;
     height: auto;
-    margin-left: 35vw;
+    margin-left: 30vw;
     background-color: #c3e9e6;
     padding: 1vw;
     font-style: normal;
-    font-size: 2vw;
+    font-size: 3vw;
     display: block;
     box-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
@@ -123,8 +123,8 @@ nav {
 }
 
 .tool-tip {
-    display: none;
-    width: 10vw;
+    display: block;
+    width: 30vw;
     background-color:#FFFFE0;
     color:#666666;
     text-align: center;
@@ -133,14 +133,15 @@ nav {
     border-bottom:1px dotted #666;
     font-weight:normal;
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
-    top:80%;
     right:30%;
       
         /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
-
+.tool-tip button {
+    font-size: 5vw;
+}
 
 .footer-distributed{
 	background-color: #292c2f;
