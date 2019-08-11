@@ -23,6 +23,7 @@ nav {
     border-style: solid;
     border-color: black;
     box-shadow: 0 1px 8px rgba(155, 6, 6, 0.5);
+    font-weight: bold;
 }
 
 .home-container {
@@ -110,9 +111,15 @@ nav {
 }
 
 .header a{
-    font: bold;
+    font-weight: bold;
     font-size: 1.5vw;
     box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 880px) {
+    .header a{
+        font-size: 4vw;
+    }
 }
 
 .tool-tip {
