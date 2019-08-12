@@ -101,7 +101,7 @@ nav {
 .connect-us div{
     width: 50vw;
     height: auto;
-    margin-left: 30vw;
+    margin-left: 25vw;
     background-color: #c3e9e6;
     padding: 1vw;
     font-style: normal;
@@ -124,7 +124,7 @@ nav {
 
 .tool-tip {
     display: block;
-    width: 30vw;
+    width: 10vw;
     background-color:#FFFFE0;
     color:#666666;
     text-align: center;
@@ -138,9 +138,10 @@ nav {
         /* Position the tooltip */
     position: absolute;
     z-index: 1;
+    font-size: 1vw;
 }
 .tool-tip button {
-    font-size: 5vw;
+    font-size: 1vw;
 }
 
 .footer-distributed{
