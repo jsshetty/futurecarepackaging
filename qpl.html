@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Sample code for 3rd party web apps that need to launch athenaIDX -->
+<html>
+	<head>
+		<!-- Point the below URL to the target aIDX server -->
+		<script src="https://idx75t.englab.athenahealth.com/rcm/launch/api.js"></script>
+
+		<script>
+			function launch() {
+				var txt = document.getElementById('txt').value;
+				if (!txt) return;
+				var launchBy = document.getElementById('launchBy').value;
+				var page = document.getElementById('page').value;
+				if (launchBy === 'mrn') window.athenaIDX.viewPatientWithMrn(txt, page);
+				else if (launchBy === 'phNumber') window.athenaIDX.viewPatientWithPhone(txt, page);
+				else if (launchBy === 'taskId') window.athenaIDX.viewPatientFromTask(txt, page);
+				else if (launchBy === 'lookup') window.athenaIDX.viewPatientLookup(txt, page);
+			}
+		</script>
+	</head>
+
+	<body style="font-family: sans-serif">
+		<h2>Quick Patient Launch API demo</h2>
+		<h3>Simplest case</h3>
+		<a href="javascript:window.athenaIDX.viewPatientWithMrn('170843', null, 'E2EE_SSL')">Test,Kevin</a> (Patient Summary - Access View)<br>
+		<a href="javascript:window.athenaIDX.viewPatientWithMrn('105275', 'PatientServices', 'E2EE_SSL')">Test,Lynda</a> (Patient Services)<br>
+		<a href="javascript:window.athenaIDX.viewPatientWithMrn('170843', null, '', 'CBWUI IDXML TAROLE')">Test,Kevin 2</a> (Patient Summary - Access View)<br>
+		<a href="javascript:window.athenaIDX.viewPatientWithMrn('105275', 'PatientServices', 'E2EE_HGLNDSSL')">Test,Lynda 2</a> (Patient Services)<br>
+            <a href="javascript:window.athenaIDX.viewPatientWithMrn('105275', 'MemberSummary', 'E2EE_HGLNDSSL')">Test,Lynda 2</a> (Member Summary)<br>
+            <a href="javascript:window.athenaIDX.viewPatientWithPhone('2233445566', 'MemberSummary', 'E2EE_HGLNDSSL')">Test,Lynda 2</a> (Member Summary)<br>
+		<br>
+
+		<h3>Full demo</h3>
+		<select id="launchBy" onchange="document.getElementById('formatsLink').style.display = document.getElementById('launchBy').value === 'lookup' ? 'inline': 'none'">
+			<option value="mrn">MRN</option>
+			<option value="phNumber">Phone Number</option>
+			<option value="taskId">Task ID</option>
+			<option value="lookup">Lookup Entry</option>
+		</select>
+		<input type="text" id="txt" style="width:137px">
+		<a href="../tips/search-tips.html" id="formatsLink" style="display:none; font-size:12px" target="lookupFormats">Supported formats</a>
+		<br>
+		<select id="page" style="margin-top:10px">
+			<option value="PatientSummaryAccess">Patient Summary - Access View</option>
+			<option value="PatientSummaryFinancial">Patient Summary - Financial View</option>
+			<option value="MemberSummary">Member Summary</option>
+			<option value="PatientServices">Patient Services</option>
+			<option value="PatientFinancials">Patient Financials</option>
+		</select>
+		<button onclick="launch()">Launch</button>
+		<br><br>
+	</body>
+</html>
